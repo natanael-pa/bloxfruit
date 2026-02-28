@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub Kids</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #4ecdc4;
+            --accent-color: #ffe66d;
+            --bg-color: #f7fff7;
+            --text-color: #2f2f2f;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Quicksand', sans-serif;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(#d1f5f2 2px, transparent 2px);
+            background-size: 30px 30px; /* Efeito de pontinhos no fundo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .menu-container {
+            background: white;
+            width: 90%;
+            max-width: 400px;
+            padding: 30px;
+            border-radius: 40px;
+            box-shadow: 0 15px 0px #ced4da, 0 20px 30px rgba(0,0,0,0.1);
+            border: 8px solid #4ecdc4;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Fredoka One', cursive;
+            color: var(--primary-color);
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 0px #ffe66d;
+            letter-spacing: 2px;
+        }
+
+        .menu-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-item {
+            margin-bottom: 15px;
+        }
+
+        .menu-link {
+            display: block;
+            text-decoration: none;
+            background: var(--secondary-color);
+            color: white;
+            padding: 18px;
+            border-radius: 20px;
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.4rem;
+            transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 6px 0px #38b2ac;
+            position: relative;
+            top: 0;
+        }
+
+        /* Cores diferentes para cada botão para ficar bem infantil */
+        .menu-item:nth-child(1) .menu-link { background-color: #ff8e72; box-shadow: 0 6px 0px #e67e66; }
+        .menu-item:nth-child(2) .menu-link { background-color: #6a89cc; box-shadow: 0 6px 0px #4a69bd; }
+        .menu-item:nth-child(3) .menu-link { background-color: #78e08f; box-shadow: 0 6px 0px #38ad56; }
+        .menu-item:nth-child(4) .menu-link { background-color: #f6b93b; box-shadow: 0 6px 0px #e58e26; }
+        .menu-item:nth-child(5) .menu-link { background-color: #a29bfe; box-shadow: 0 6px 0px #6c5ce7; }
+
+        .menu-link:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+
+        .menu-link:active {
+            top: 4px;
+            box-shadow: 0 2px 0px #333;
+        }
+
+        /* Decoração extra */
+        .star {
+            position: absolute;
+            font-size: 20px;
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu-container">
+        <h1>MEU JOGO</h1>
+        
+        <ul class="menu-list">
+            <li class="menu-item"><a href="calculadora.html" class="menu-link">🧮 Calculadora</a></li>
+            <li class="menu-item"><a href="itens.html" class="menu-link">🎒 Itens</a></li>
+            <li class="menu-item"><a href="racas.html" class="menu-link">🐾 Raças</a></li>
+            <li class="menu-item"><a href="frutas.html" class="menu-link">🍎 Frutas</a></li>
+            <li class="menu-item"><a href="codigos.html" class="menu-link">🔑 Códigos</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
