@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Hub Kids</title>
+    <title>Blox Fruits - Menu Hub</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -35,13 +35,27 @@
             text-align: center;
         }
 
-        h1 {
+        /* Estilo do Título Blox Fruits */
+        .title-fruits {
             font-family: 'Fredoka One', cursive;
             color: #ff6b6b;
             font-size: 2.8rem;
-            margin-bottom: 35px;
+            margin: 0 0 35px 0;
             text-shadow: 3px 3px 0px #ffe66d;
             text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Imagem que substitui o "O" */
+        .title-icon-o {
+            width: 45px;
+            height: 45px;
+            margin: 0 3px;
+            object-fit: contain;
+            background: #eee; /* Fundo cinza para marcar o lugar */
+            border-radius: 50%; /* Faz um círculo para parecer o 'o' */
         }
 
         .menu-list {
@@ -57,7 +71,7 @@
         .menu-link {
             display: flex;
             align-items: center;
-            justify-content: flex-start; /* Alinha ícone e texto à esquerda */
+            justify-content: flex-start;
             text-decoration: none;
             padding: 12px 25px;
             border-radius: 25px;
@@ -69,18 +83,17 @@
             top: 0;
         }
 
-        /* Espaçamento e tamanho da imagem */
+        /* Imagens dos Ícones dos Botões */
         .menu-link img {
             width: 45px;
             height: 45px;
             margin-right: 20px;
             object-fit: contain;
-            /* Filtro opcional para enquanto você não tem imagens reais */
             background: rgba(255,255,255,0.2); 
             border-radius: 10px;
         }
 
-        /* Cores vibrantes estilo Blox Fruits/Roblox */
+        /* Cores vibrantes estilo Blox Fruits */
         .btn-calc { background-color: #ff8e72; box-shadow: 0 6px 0px #d66a50; }
         .btn-itens { background-color: #6a89cc; box-shadow: 0 6px 0px #4a69bd; }
         .btn-racas { background-color: #78e08f; box-shadow: 0 6px 0px #4fb865; }
@@ -101,7 +114,9 @@
 <body>
 
     <div class="menu-container">
-        <h1>GAME MENU</h1>
+        <h1 class="title-fruits">
+            Blox Fruits
+        </h1>
         
         <ul class="menu-list">
             <li class="menu-item">
